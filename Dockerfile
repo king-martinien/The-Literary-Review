@@ -18,9 +18,12 @@ RUN npm run build
 # Stage 2: Serve the application with Nginx
 FROM nginx:alpine
 
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
+
 # Copy the build output to Nginx's html directory
 # Note: The build output path depends on angular.json. Usually dist/project-name/browser
-COPY --from=build /app/dist/demo-app /usr/share/nginx/html
+COPY --from=build /app/dist/demo-app/browser /usr/share/nginx/html
 
 # Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
