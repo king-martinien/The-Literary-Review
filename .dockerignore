@@ -5,6 +5,5 @@ dist
 .vscode
 .idea
 Dockerfile
-nginx.conf
 README.md
 .DS_Store
