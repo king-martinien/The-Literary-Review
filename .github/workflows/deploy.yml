@@ -76,7 +76,7 @@ jobs:
             docker run -d \
               --name demo-app \
               --restart unless-stopped \
-              -p 80:80 \
+              -p 8081:80 \
               $IMAGE_NAME:latest
             
             # Cleanup unused images
