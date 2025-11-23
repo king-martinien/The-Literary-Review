@@ -1,0 +1,99 @@
+<section class="pt-40 pb-24 bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
+    <div class="container mx-auto px-4 md:px-6">
+
+        <!-- Hero Section -->
+        <div #heroSection class="text-center mb-20">
+            <span
+                class="inline-block py-1 px-3 border border-black dark:border-white text-xs uppercase tracking-widest mb-6 dark:text-white">{{
+                'ABOUT.HERO.BADGE' | translate }}</span>
+            <h1 class="font-serif text-5xl md:text-6xl mb-6 dark:text-white">{{ 'ABOUT.HERO.TITLE' | translate }}</h1>
+            <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                {{ 'ABOUT.HERO.DESCRIPTION' | translate }}
+            </p>
+        </div>
+
+        <!-- Founder Section -->
+        <div #founderSection class="max-w-7xl overflow-hidden opacity-0 translate-y-12">
+            <div class="flex flex-col md:flex-row">
+                <!-- Image Side -->
+                <div class="md:w-1/2 overflow-hidden rounded-lg relative min-h-[550px]">
+                    <img ngSrc="/images/founder.png" alt="Founder Portrait" fill priority class="object-cover">
+                </div>
+
+                <!-- Text Side -->
+                <div class="md:w-1/2 p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                    <blockquote
+                        class="font-serif text-xl md:text-2xl italic text-gray-800 dark:text-gray-100 mb-8 leading-relaxed">
+                        "{{ 'ABOUT.FOUNDER.QUOTE' | translate }}"
+                    </blockquote>
+
+                    <div class="prose prose-emerald text-gray-600 dark:text-gray-300 mb-8">
+                        <p>
+                            {{ 'ABOUT.FOUNDER.PARAGRAPH_1' | translate }}
+                        </p>
+                        <p>
+                            {{ 'ABOUT.FOUNDER.PARAGRAPH_2' | translate }}
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="font-serif text-xl font-bold text-gray-900 dark:text-white">{{ 'ABOUT.FOUNDER.NAME' |
+                            translate }}</h2>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mt-1">{{
+                            'ABOUT.FOUNDER.TITLE' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision, Mission, Values Section -->
+        <div #valuesSection class="grid grid-cols-1 md:grid-cols-3 w-full mt-20">
+            <!-- Vision (Green) -->
+            <div class="bg-emerald-700 text-white p-12 md:p-16 flex flex-col">
+                <h2 class="font-serif text-3xl mb-6">{{ 'ABOUT.VISION.TITLE' | translate }}</h2>
+                <p class="text-emerald-100 leading-relaxed text-lg">
+                    {{ 'ABOUT.VISION.DESCRIPTION' | translate }}
+                </p>
+            </div>
+
+            <!-- Mission (Red) -->
+            <div class="bg-rose-700 text-white p-12 md:p-16 flex flex-col relative overflow-hidden">
+                <h2 class="font-serif text-3xl mb-6">{{ 'ABOUT.MISSION.TITLE' | translate }}</h2>
+                <p class="text-rose-100 leading-relaxed text-lg relative z-10">
+                    {{ 'ABOUT.MISSION.DESCRIPTION' | translate }}
+                </p>
+                <lucide-icon [img]="Star"
+                    class="w-64 h-64 text-yellow-400 opacity-40 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></lucide-icon>
+            </div>
+
+            <!-- Values (Yellow) -->
+            <div class="bg-amber-400 text-black p-12 md:p-16 flex flex-col">
+                <h2 class="font-serif text-3xl mb-6">{{ 'ABOUT.VALUES.TITLE' | translate }}</h2>
+                <p class="text-black leading-relaxed text-lg">
+                    {{ 'ABOUT.VALUES.DESCRIPTION' | translate }}
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section (Full Width) -->
+<div #ctaSection class="relative w-full py-20 text-center overflow-hidden opacity-0 scale-95">
+    <!-- Background Image -->
+    <img ngSrc="/images/cta-bg-v2.png" alt="" fill class="object-cover z-0">
+
+    <!-- Overlay for better text readability if needed -->
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4">
+        <h2 class="font-serif text-4xl md:text-5xl mb-6 text-white">{{ 'ABOUT.CTA.TITLE' | translate }}</h2>
+        <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+            {{ 'ABOUT.CTA.DESCRIPTION' | translate }}
+        </p>
+        <a routerLink="/contact"
+            class="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-gray-100 transition-all transform hover:-translate-y-1 shadow-lg">
+            {{ 'ABOUT.CTA.BUTTON' | translate }}
+        </a>
+    </div>
+</div>

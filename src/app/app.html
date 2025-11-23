@@ -1,0 +1,10 @@
+<app-custom-cursor></app-custom-cursor>
+<app-header></app-header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+@defer (on viewport) {
+<app-footer></app-footer>
+} @placeholder {
+<app-footer-skeleton></app-footer-skeleton>
+}

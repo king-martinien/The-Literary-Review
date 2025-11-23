@@ -1,0 +1,203 @@
+{
+    "APP_TITLE": "The Literary Review",
+    "NAV": {
+        "HOME": "Home",
+        "ABOUT": "About",
+        "INTERVIEWS": "Interviews",
+        "CONTACT": "Contact"
+    },
+    "HERO": {
+        "SUBTITLE": "Literary Excellence",
+        "TITLE": "The Literary<br>Review",
+        "DESCRIPTION": "Exploring the depths of contemporary literature through thoughtful criticism and discovery",
+        "CTA": "Read the full essay"
+    },
+    "DISCOVERY": {
+        "BADGE": "Discovery of the Month",
+        "TITLE": "The Echoes of Time",
+        "AUTHOR": "by Elena Vance",
+        "DESCRIPTION": "A hauntingly beautiful exploration of memory and loss. Vance weaves a tapestry of interconnected lives across three centuries, challenging our perception of what it means to leave a legacy.",
+        "CTA": "Read Full Review"
+    },
+    "ARTICLE": {
+        "READ_STORY": "Read Story"
+    },
+    "QUOTES": {
+        "Q1": {
+            "TEXT": "We write to taste life twice, in the moment and in retrospect.",
+            "AUTHOR": "Anaïs Nin"
+        },
+        "Q2": {
+            "TEXT": "There is no greater agony than bearing an untold story inside you.",
+            "AUTHOR": "Maya Angelou"
+        },
+        "Q3": {
+            "TEXT": "So we beat on, boats against the current, borne back ceaselessly into the past.",
+            "AUTHOR": "F. Scott Fitzgerald"
+        },
+        "Q4": {
+            "TEXT": "I am no bird; and no net ensnares me: I am a free human being with an independent will.",
+            "AUTHOR": "Charlotte Brontë"
+        }
+    },
+    "ABOUT": {
+        "HERO": {
+            "BADGE": "Our Story",
+            "TITLE": "About Literary Review",
+            "DESCRIPTION": "Exploring the world through words, one story at a time. We are dedicated to curating the finest literary works and sharing profound insights."
+        },
+        "FOUNDER": {
+            "QUOTE": "Literature is not just about reading words on a page; it's about connecting with the human experience in its rawest form.",
+            "PARAGRAPH_1": "When I started Literary Review, my goal was simple: to create a sanctuary for those who believe in the transformative power of stories. In a world that moves increasingly fast, we offer a place to slow down and reflect.",
+            "PARAGRAPH_2": "We are more than just a publication; we are a community of curious minds dedicated to exploring the depths of creativity and thought.",
+            "NAME": "Martinien Sahati",
+            "TITLE": "Founder & Editor-in-Chief"
+        },
+        "VISION": {
+            "TITLE": "Vision",
+            "DESCRIPTION": "To be the world's most trusted sanctuary for literary exploration, where every reader finds their next life-changing story."
+        },
+        "MISSION": {
+            "TITLE": "Mission",
+            "DESCRIPTION": "Igniting a global passion for reading by connecting diverse voices, fostering critical thought, and celebrating the art of storytelling."
+        },
+        "VALUES": {
+            "TITLE": "Values",
+            "DESCRIPTION": "We uphold integrity in criticism, champion inclusivity of voices, and foster intellectual curiosity. We believe in the power of honest dialogue and the importance of diverse perspectives in shaping a richer literary landscape."
+        },
+        "CTA": {
+            "TITLE": "Have Questions?",
+            "DESCRIPTION": "Whether you're curious about our review process, want to submit your own work, or just want to say hello, we'd love to hear from you.",
+            "BUTTON": "Contact Us"
+        }
+    },
+    "INTERVIEWS": {
+        "HERO": {
+            "BADGE": "Conversations",
+            "TITLE": "Interviews",
+            "DESCRIPTION": "In-depth dialogues with the voices shaping contemporary literature and thought."
+        },
+        "FEATURED_BADGE": "Featured",
+        "READ_INTERVIEW": "Read Interview"
+    },
+    "CONTACT": {
+        "HERO": {
+            "BADGE": "Get in Touch",
+            "TITLE": "Contact Us",
+            "DESCRIPTION": "We'd love to hear from you. Whether you have a question about a review, want to submit an essay, or just want to say hello."
+        },
+        "INFO": {
+            "TITLE": "Contact Information",
+            "DESCRIPTION": "Need help, want to recommend a book, or ask a question? Our team is here to listen."
+        },
+        "FORM": {
+            "NAME_LABEL": "Name*",
+            "NAME_PLACEHOLDER": "Your name",
+            "PHONE_LABEL": "Phone Number*",
+            "PHONE_PLACEHOLDER": "Your phone number",
+            "EMAIL_LABEL": "Email Address*",
+            "EMAIL_PLACEHOLDER": "Your email address",
+            "MESSAGE_LABEL": "Message",
+            "MESSAGE_PLACEHOLDER": "Your message",
+            "SUBMIT_BUTTON": "Send Message",
+            "VALIDATION": {
+                "NAME_REQUIRED": "Name is required.",
+                "NAME_MIN_LENGTH": "Name must be at least 2 characters.",
+                "NAME_MAX_LENGTH": "Name cannot exceed 50 characters.",
+                "PHONE_REQUIRED": "Phone number is required.",
+                "PHONE_MIN_LENGTH": "Phone number must be at least 10 characters.",
+                "PHONE_MAX_LENGTH": "Phone number cannot exceed 20 characters.",
+                "EMAIL_REQUIRED": "Email is required.",
+                "EMAIL_INVALID": "Please enter a valid email address.",
+                "MESSAGE_REQUIRED": "Message is required.",
+                "MESSAGE_MIN_LENGTH": "Message must be at least 10 characters.",
+                "MESSAGE_MAX_LENGTH": "Message cannot exceed 1000 characters."
+            }
+        }
+    },
+    "FOOTER": {
+        "TAGLINE": "Dedicated to the art of storytelling and the preservation of literary culture in the digital age.",
+        "SECTIONS": {
+            "TITLE": "Sections",
+            "ABOUT": "About",
+            "INTERVIEWS": "Interviews",
+            "REVIEWS": "Reviews",
+            "ESSAYS": "Essays",
+            "FICTION": "Fiction"
+        },
+        "CONNECT": {
+            "TITLE": "Connect",
+            "TWITTER": "Twitter",
+            "INSTAGRAM": "Instagram",
+            "FACEBOOK": "Facebook"
+        },
+        "CONTACT": {
+            "TITLE": "Contact",
+            "SEND_MESSAGE": "Send us a message"
+        },
+        "COPYRIGHT": "© 2025 The Literary Review. All rights reserved.",
+        "PRIVACY_POLICY": "Privacy Policy",
+        "TERMS_OF_SERVICE": "Terms of Service"
+    },
+    "ARTICLE_DETAIL": {
+        "BACK_TO_HOME": "Back to Home",
+        "NOT_FOUND": "Article not found",
+        "RETURN_HOME": "Return Home"
+    },
+    "INTERVIEW_DETAIL": {
+        "BACK_TO_INTERVIEWS": "Back to Interviews",
+        "NOT_FOUND": "Interview not found",
+        "RETURN_HOME": "Return Home"
+    },
+    "NOT_FOUND": {
+        "TITLE": "404",
+        "SUBTITLE": "Page Not Found",
+        "DESCRIPTION": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "RETURN_HOME": "Return to Home"
+    },
+    "PRIVACY": {
+        "TITLE": "Privacy Policy",
+        "LAST_UPDATED": "Last updated: November 21, 2025",
+        "INTRO": "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.",
+        "SECTION_1_TITLE": "Interpretation and Definitions",
+        "SECTION_1_CONTENT": "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.",
+        "SECTION_2_TITLE": "Collecting and Using Your Personal Data",
+        "SECTION_2_CONTENT": "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:",
+        "SECTION_2_LIST": [
+            "Email address",
+            "First name and last name",
+            "Usage Data"
+        ],
+        "SECTION_3_TITLE": "Retention of Your Personal Data",
+        "SECTION_3_CONTENT": "The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.",
+        "SECTION_4_TITLE": "Transfer of Your Personal Data",
+        "SECTION_4_CONTENT": "Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.",
+        "SECTION_5_TITLE": "Disclosure of Your Personal Data",
+        "SECTION_5_CONTENT": "If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.",
+        "SECTION_6_TITLE": "Security of Your Personal Data",
+        "SECTION_6_CONTENT": "The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.",
+        "SECTION_7_TITLE": "Children's Privacy",
+        "SECTION_7_CONTENT": "Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us."
+    },
+    "TERMS": {
+        "TITLE": "Terms of Service",
+        "LAST_UPDATED": "Last updated: November 21, 2025",
+        "INTRO": "Please read these terms and conditions carefully before using Our Service.",
+        "SECTION_1_TITLE": "Acknowledgment",
+        "SECTION_1_CONTENT": "These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.",
+        "SECTION_2_TITLE": "Links to Other Websites",
+        "SECTION_2_P1": "Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.",
+        "SECTION_2_P2": "The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.",
+        "SECTION_2_P3": "We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.",
+        "SECTION_3_TITLE": "Termination",
+        "SECTION_3_CONTENT": "We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions. Upon termination, Your right to use the Service will cease immediately.",
+        "SECTION_4_TITLE": "Limitation of Liability",
+        "SECTION_4_CONTENT": "Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.",
+        "SECTION_5_TITLE": "Governing Law",
+        "SECTION_5_CONTENT": "The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.",
+        "SECTION_6_TITLE": "Disputes Resolution",
+        "SECTION_6_CONTENT": "If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.",
+        "SECTION_7_TITLE": "Changes to These Terms and Conditions",
+        "SECTION_7_CONTENT": "We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion."
+    }
+}

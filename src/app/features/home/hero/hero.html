@@ -1,0 +1,27 @@
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-6 text-center z-10">
+        <span #subtitle
+            class="inline-block py-1 px-3 border border-black dark:border-white text-xs uppercase tracking-widest mb-6 dark:text-white">
+            {{ 'HERO.SUBTITLE' | translate }}
+        </span>
+
+        <h1 #title class="font-serif text-6xl md:text-8xl mb-6 leading-tight dark:text-white"
+            [innerHTML]="'HERO.TITLE' | translate">
+        </h1>
+
+        <p #description class="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+            {{ 'HERO.DESCRIPTION' | translate }}
+        </p>
+
+        <a #cta routerLink="/about"
+            class="inline-flex items-center text-sm uppercase tracking-widest border border-black dark:border-white px-8 py-4 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300 group dark:text-white">
+            {{ 'HERO.CTA' | translate }} &rarr;
+        </a>
+    </div>
+
+    <!-- Abstract Background Element -->
+    <div class="absolute inset-0 z-0">
+        <img #heroBg ngSrc="/images/hero-background.webp" alt="Open book with flowers" fill priority
+            fetchpriority="high" class="object-cover opacity-20 dark:opacity-10">
+    </div>
+</section>

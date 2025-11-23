@@ -1,0 +1,203 @@
+{
+    "APP_TITLE": "The Literary Review",
+    "NAV": {
+        "HOME": "Accueil",
+        "ABOUT": "À Propos",
+        "INTERVIEWS": "Entretiens",
+        "CONTACT": "Contact"
+    },
+    "HERO": {
+        "SUBTITLE": "Excellence Littéraire",
+        "TITLE": "La Revue<br>Littéraire",
+        "DESCRIPTION": "Explorer les profondeurs de la littérature contemporaine à travers une critique réfléchie et la découverte",
+        "CTA": "Lire l'essai complet"
+    },
+    "DISCOVERY": {
+        "BADGE": "Découverte du Mois",
+        "TITLE": "Les Échos du Temps",
+        "AUTHOR": "par Elena Vance",
+        "DESCRIPTION": "Une exploration d'une beauté obsédante de la mémoire et de la perte. Vance tisse une tapisserie de vies interconnectées à travers trois siècles, remettant en question notre perception de ce que signifie laisser un héritage.",
+        "CTA": "Lire la Critique Complète"
+    },
+    "ARTICLE": {
+        "READ_STORY": "Lire l'Histoire"
+    },
+    "QUOTES": {
+        "Q1": {
+            "TEXT": "Nous écrivons pour goûter la vie deux fois, sur le moment et rétrospectivement.",
+            "AUTHOR": "Anaïs Nin"
+        },
+        "Q2": {
+            "TEXT": "Il n'y a pas de plus grande agonie que de porter une histoire non racontée en soi.",
+            "AUTHOR": "Maya Angelou"
+        },
+        "Q3": {
+            "TEXT": "C'est ainsi que nous avançons, barques à contre-courant, sans cesse ramenés vers le passé.",
+            "AUTHOR": "F. Scott Fitzgerald"
+        },
+        "Q4": {
+            "TEXT": "Je ne suis pas un oiseau ; et aucun filet ne m'emprisonne : je suis un être humain libre avec une volonté indépendante.",
+            "AUTHOR": "Charlotte Brontë"
+        }
+    },
+    "ABOUT": {
+        "HERO": {
+            "BADGE": "Notre Histoire",
+            "TITLE": "À Propos de Literary Review",
+            "DESCRIPTION": "Explorer le monde à travers les mots, une histoire à la fois. Nous nous consacrons à la sélection des meilleures œuvres littéraires et au partage d'idées profondes."
+        },
+        "FOUNDER": {
+            "QUOTE": "La littérature ne consiste pas seulement à lire des mots sur une page ; il s'agit de se connecter à l'expérience humaine dans sa forme la plus brute.",
+            "PARAGRAPH_1": "Lorsque j'ai créé Literary Review, mon objectif était simple : créer un sanctuaire pour ceux qui croient au pouvoir transformateur des histoires. Dans un monde qui évolue de plus en plus vite, nous offrons un lieu pour ralentir et réfléchir.",
+            "PARAGRAPH_2": "Nous sommes plus qu'une simple publication ; nous sommes une communauté d'esprits curieux dédiés à l'exploration des profondeurs de la créativité et de la pensée.",
+            "NAME": "Martinien Sahati",
+            "TITLE": "Fondateur & Rédacteur en Chef"
+        },
+        "VISION": {
+            "TITLE": "Vision",
+            "DESCRIPTION": "Être le sanctuaire le plus fiable au monde pour l'exploration littéraire, où chaque lecteur trouve sa prochaine histoire qui changera sa vie."
+        },
+        "MISSION": {
+            "TITLE": "Mission",
+            "DESCRIPTION": "Susciter une passion mondiale pour la lecture en connectant des voix diverses, en favorisant la pensée critique et en célébrant l'art de raconter des histoires."
+        },
+        "VALUES": {
+            "TITLE": "Valeurs",
+            "DESCRIPTION": "Nous défendons l'intégrité dans la critique, défendons l'inclusivité des voix et favorisons la curiosité intellectuelle. Nous croyons au pouvoir du dialogue honnête et à l'importance de perspectives diverses dans la création d'un paysage littéraire plus riche."
+        },
+        "CTA": {
+            "TITLE": "Des Questions ?",
+            "DESCRIPTION": "Que vous soyez curieux de notre processus de critique, que vous souhaitiez soumettre votre propre travail ou simplement dire bonjour, nous serions ravis de vous entendre.",
+            "BUTTON": "Contactez-Nous"
+        }
+    },
+    "INTERVIEWS": {
+        "HERO": {
+            "BADGE": "Conversations",
+            "TITLE": "Entretiens",
+            "DESCRIPTION": "Dialogues approfondis avec les voix qui façonnent la littérature et la pensée contemporaines."
+        },
+        "FEATURED_BADGE": "En Vedette",
+        "READ_INTERVIEW": "Lire l'Entretien"
+    },
+    "CONTACT": {
+        "HERO": {
+            "BADGE": "Contactez-Nous",
+            "TITLE": "Nous Contacter",
+            "DESCRIPTION": "Nous serions ravis de vous entendre. Que vous ayez une question sur une critique, que vous souhaitiez soumettre un essai ou simplement dire bonjour."
+        },
+        "INFO": {
+            "TITLE": "Informations de Contact",
+            "DESCRIPTION": "Besoin d'aide, envie de recommander un livre ou poser une question ? Notre équipe est là pour écouter."
+        },
+        "FORM": {
+            "NAME_LABEL": "Nom*",
+            "NAME_PLACEHOLDER": "Votre nom",
+            "PHONE_LABEL": "Numéro de Téléphone*",
+            "PHONE_PLACEHOLDER": "Votre numéro de téléphone",
+            "EMAIL_LABEL": "Adresse Email*",
+            "EMAIL_PLACEHOLDER": "Votre adresse email",
+            "MESSAGE_LABEL": "Message",
+            "MESSAGE_PLACEHOLDER": "Votre message",
+            "SUBMIT_BUTTON": "Envoyer le Message",
+            "VALIDATION": {
+                "NAME_REQUIRED": "Le nom est requis.",
+                "NAME_MIN_LENGTH": "Le nom doit contenir au moins 2 caractères.",
+                "NAME_MAX_LENGTH": "Le nom ne peut pas dépasser 50 caractères.",
+                "PHONE_REQUIRED": "Le numéro de téléphone est requis.",
+                "PHONE_MIN_LENGTH": "Le numéro de téléphone doit contenir au moins 10 caractères.",
+                "PHONE_MAX_LENGTH": "Le numéro de téléphone ne peut pas dépasser 20 caractères.",
+                "EMAIL_REQUIRED": "L'email est requis.",
+                "EMAIL_INVALID": "Veuillez entrer une adresse email valide.",
+                "MESSAGE_REQUIRED": "Le message est requis.",
+                "MESSAGE_MIN_LENGTH": "Le message doit contenir au moins 10 caractères.",
+                "MESSAGE_MAX_LENGTH": "Le message ne peut pas dépasser 1000 caractères."
+            }
+        }
+    },
+    "FOOTER": {
+        "TAGLINE": "Dédiés à l'art de raconter des histoires et à la préservation de la culture littéraire à l'ère numérique.",
+        "SECTIONS": {
+            "TITLE": "Sections",
+            "ABOUT": "À Propos",
+            "INTERVIEWS": "Entretiens",
+            "REVIEWS": "Critiques",
+            "ESSAYS": "Essais",
+            "FICTION": "Fiction"
+        },
+        "CONNECT": {
+            "TITLE": "Connecter",
+            "TWITTER": "Twitter",
+            "INSTAGRAM": "Instagram",
+            "FACEBOOK": "Facebook"
+        },
+        "CONTACT": {
+            "TITLE": "Contact",
+            "SEND_MESSAGE": "Envoyez-nous un message"
+        },
+        "COPYRIGHT": "© 2025 The Literary Review. Tous droits réservés.",
+        "PRIVACY_POLICY": "Politique de Confidentialité",
+        "TERMS_OF_SERVICE": "Conditions d'Utilisation"
+    },
+    "ARTICLE_DETAIL": {
+        "BACK_TO_HOME": "Retour à l'Accueil",
+        "NOT_FOUND": "Article introuvable",
+        "RETURN_HOME": "Retour à l'Accueil"
+    },
+    "INTERVIEW_DETAIL": {
+        "BACK_TO_INTERVIEWS": "Retour aux Entretiens",
+        "NOT_FOUND": "Entretien introuvable",
+        "RETURN_HOME": "Retour à l'Accueil"
+    },
+    "NOT_FOUND": {
+        "TITLE": "404",
+        "SUBTITLE": "Page Introuvable",
+        "DESCRIPTION": "La page que vous recherchez a peut-être été supprimée, son nom a changé ou elle est temporairement indisponible.",
+        "RETURN_HOME": "Retour à l'Accueil"
+    },
+    "PRIVACY": {
+        "TITLE": "Politique de Confidentialité",
+        "LAST_UPDATED": "Dernière mise à jour : 21 novembre 2025",
+        "INTRO": "Cette Politique de Confidentialité décrit Nos politiques et procédures concernant la collecte, l'utilisation et la divulgation de Vos informations lorsque Vous utilisez le Service et Vous informe de Vos droits en matière de confidentialité et de la manière dont la loi Vous protège.",
+        "SECTION_1_TITLE": "Interprétation et Définitions",
+        "SECTION_1_CONTENT": "Les mots dont la lettre initiale est en majuscule ont des significations définies dans les conditions suivantes. Les définitions suivantes auront la même signification qu'elles apparaissent au singulier ou au pluriel.",
+        "SECTION_2_TITLE": "Collecte et Utilisation de Vos Données Personnelles",
+        "SECTION_2_CONTENT": "Lors de l'utilisation de Notre Service, Nous pouvons Vous demander de Nous fournir certaines informations personnellement identifiables qui peuvent être utilisées pour Vous contacter ou Vous identifier. Les informations personnellement identifiables peuvent inclure, sans s'y limiter :",
+        "SECTION_2_LIST": [
+            "Adresse email",
+            "Prénom et nom",
+            "Données d'utilisation"
+        ],
+        "SECTION_3_TITLE": "Conservation de Vos Données Personnelles",
+        "SECTION_3_CONTENT": "La Société ne conservera Vos Données Personnelles que pendant la durée nécessaire aux fins énoncées dans cette Politique de Confidentialité. Nous conserverons et utiliserons Vos Données Personnelles dans la mesure nécessaire pour nous conformer à nos obligations légales (par exemple, si nous sommes tenus de conserver vos données pour nous conformer aux lois applicables), résoudre les litiges et appliquer nos accords et politiques juridiques.",
+        "SECTION_4_TITLE": "Transfert de Vos Données Personnelles",
+        "SECTION_4_CONTENT": "Vos informations, y compris les Données Personnelles, sont traitées dans les bureaux d'exploitation de la Société et dans tout autre lieu où se trouvent les parties impliquées dans le traitement. Cela signifie que ces informations peuvent être transférées vers — et conservées sur — des ordinateurs situés en dehors de Votre état, province, pays ou autre juridiction gouvernementale où les lois sur la protection des données peuvent différer de celles de Votre juridiction.",
+        "SECTION_5_TITLE": "Divulgation de Vos Données Personnelles",
+        "SECTION_5_CONTENT": "Si la Société est impliquée dans une fusion, une acquisition ou une vente d'actifs, Vos Données Personnelles peuvent être transférées. Nous fournirons un avis avant que Vos Données Personnelles ne soient transférées et ne deviennent soumises à une Politique de Confidentialité différente.",
+        "SECTION_6_TITLE": "Sécurité de Vos Données Personnelles",
+        "SECTION_6_CONTENT": "La sécurité de Vos Données Personnelles est importante pour Nous, mais rappelez-vous qu'aucune méthode de transmission sur Internet ou méthode de stockage électronique n'est sécurisée à 100%. Bien que Nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger Vos Données Personnelles, Nous ne pouvons garantir leur sécurité absolue.",
+        "SECTION_7_TITLE": "Confidentialité des Enfants",
+        "SECTION_7_CONTENT": "Notre Service ne s'adresse à personne de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnellement identifiables auprès de personnes de moins de 13 ans. Si Vous êtes un parent ou un tuteur et que Vous savez que Votre enfant Nous a fourni des Données Personnelles, veuillez Nous contacter."
+    },
+    "TERMS": {
+        "TITLE": "Conditions d'Utilisation",
+        "LAST_UPDATED": "Dernière mise à jour : 21 novembre 2025",
+        "INTRO": "Veuillez lire attentivement ces conditions générales avant d'utiliser Notre Service.",
+        "SECTION_1_TITLE": "Reconnaissance",
+        "SECTION_1_CONTENT": "Ce sont les Conditions Générales régissant l'utilisation de ce Service et l'accord qui opère entre Vous et la Société. Ces Conditions Générales énoncent les droits et obligations de tous les utilisateurs concernant l'utilisation du Service.",
+        "SECTION_2_TITLE": "Liens vers d'Autres Sites Web",
+        "SECTION_2_P1": "Notre Service peut contenir des liens vers des sites Web ou des services tiers qui ne sont pas détenus ou contrôlés par la Société.",
+        "SECTION_2_P2": "La Société n'a aucun contrôle sur et n'assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques de tout site Web ou service tiers. Vous reconnaissez et acceptez en outre que la Société ne sera pas responsable, directement ou indirectement, de tout dommage ou perte causé ou présumé être causé par ou en relation avec l'utilisation ou la confiance accordée à un tel contenu, biens ou services disponibles sur ou via de tels sites Web ou services.",
+        "SECTION_2_P3": "Nous Vous conseillons vivement de lire les conditions générales et les politiques de confidentialité de tout site Web ou service tiers que Vous visitez.",
+        "SECTION_3_TITLE": "Résiliation",
+        "SECTION_3_CONTENT": "Nous pouvons résilier ou suspendre Votre accès immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris sans limitation si Vous enfreignez ces Conditions Générales. À la résiliation, Votre droit d'utiliser le Service cessera immédiatement.",
+        "SECTION_4_TITLE": "Limitation de Responsabilité",
+        "SECTION_4_CONTENT": "Nonobstant tout dommage que Vous pourriez subir, l'entière responsabilité de la Société et de l'un de ses fournisseurs en vertu de toute disposition de ces Conditions et Votre recours exclusif pour tout ce qui précède sera limité au montant réellement payé par Vous via le Service ou 100 USD si Vous n'avez rien acheté via le Service.",
+        "SECTION_5_TITLE": "Loi Applicable",
+        "SECTION_5_CONTENT": "Les lois du Pays, à l'exclusion de ses règles de conflit de lois, régiront ces Conditions et Votre utilisation du Service. Votre utilisation de l'Application peut également être soumise à d'autres lois locales, étatiques, nationales ou internationales.",
+        "SECTION_6_TITLE": "Résolution des Litiges",
+        "SECTION_6_CONTENT": "Si Vous avez une préoccupation ou un litige concernant le Service, Vous acceptez d'abord d'essayer de résoudre le litige de manière informelle en contactant la Société.",
+        "SECTION_7_TITLE": "Modifications de ces Conditions Générales",
+        "SECTION_7_CONTENT": "Nous nous réservons le droit, à Notre seule discrétion, de modifier ou de remplacer ces Conditions à tout moment. Si une révision est importante, Nous ferons des efforts raisonnables pour fournir un préavis d'au moins 30 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement important sera déterminé à Notre seule discrétion."
+    }
+}

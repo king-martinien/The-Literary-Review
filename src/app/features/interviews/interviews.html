@@ -1,0 +1,87 @@
+<section class="pt-40 pb-24 bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
+    <div class="container mx-auto px-4 md:px-6">
+
+        <!-- Hero -->
+        <div #heroSection class="text-center mb-20">
+            <span
+                class="inline-block py-1 px-3 border border-black dark:border-white text-xs uppercase tracking-widest mb-6 dark:text-white">{{
+                'INTERVIEWS.HERO.BADGE' | translate }}</span>
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 dark:text-white">{{ 'INTERVIEWS.HERO.TITLE' | translate }}
+            </h1>
+            <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                {{ 'INTERVIEWS.HERO.DESCRIPTION' | translate }}
+            </p>
+        </div>
+
+        <!-- Featured Interview -->
+        <div #featuredSection class="mb-24 opacity-0 translate-y-12">
+            @if (featuredInterview) {
+            <div class="group relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="relative aspect-[4/3] lg:aspect-square overflow-hidden rounded-lg">
+                    <img [ngSrc]="featuredInterview.image" [alt]="featuredInterview.interviewee" fill priority
+                        class="object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider dark:text-white">
+                        {{ 'INTERVIEWS.FEATURED_BADGE' | translate }}
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div class="flex items-center space-x-4 mb-6 text-sm text-gray-500 dark:text-gray-400">
+                        <span class="uppercase tracking-widest">{{ featuredInterview.role }}</span>
+                        <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                        <span>{{ featuredInterview.date | date:'longDate' }}</span>
+                    </div>
+                    <h2
+                        class="font-serif text-4xl md:text-5xl mb-6 leading-tight text-gray-900 dark:text-white group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition-colors">
+                        <a [routerLink]="['/interviews', featuredInterview.id]">{{ featuredInterview.title }}</a>
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        {{ featuredInterview.excerpt }}
+                    </p>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm font-bold uppercase tracking-widest dark:text-white">{{
+                            'INTERVIEWS.READ_INTERVIEW' | translate }}</span>
+                        <lucide-icon [img]="ArrowRight" class="w-4 h-4 dark:text-white"></lucide-icon>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+
+        <!-- Interview Grid -->
+        <div #gridSection class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+            @for (interview of interviews; track interview.id) {
+            <div class="group flex flex-col opacity-0 translate-y-12">
+                <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-6 bg-gray-100 dark:bg-gray-800">
+                    <img [ngSrc]="interview.image" [alt]="interview.interviewee" fill
+                        class="object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+
+                <div
+                    class="flex items-center space-x-3 mb-3 text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">
+                    <span>{{ interview.role }}</span>
+                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span>{{ interview.date | date:'mediumDate' }}</span>
+                </div>
+
+                <h3
+                    class="font-serif text-2xl mb-3 leading-tight text-gray-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+                    <a [routerLink]="['/interviews', interview.id]">{{ interview.title }}</a>
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-300 line-clamp-3 mb-4">
+                    {{ interview.excerpt }}
+                </p>
+
+                <div
+                    class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center">
+                    <span class="text-sm font-medium text-gray-900 dark:text-white">{{ interview.interviewee }}</span>
+                    <lucide-icon [img]="ArrowRight"
+                        class="w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors"></lucide-icon>
+                </div>
+            </div>
+            }
+        </div>
+
+    </div>
+</section>

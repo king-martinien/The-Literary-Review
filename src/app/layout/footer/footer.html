@@ -1,0 +1,104 @@
+<footer
+    class="bg-black text-white py-16 border-t border-gray-900 dark:bg-gray-950 dark:border-gray-800 transition-colors duration-300">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div>
+                <h2 class="font-serif text-3xl mb-6">{{ 'APP_TITLE' | translate }}</h2>
+                <p class="text-gray-400 leading-relaxed">
+                    {{ 'FOOTER.TAGLINE' | translate }}
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-sm uppercase tracking-widest mb-6 text-gray-400">{{ 'FOOTER.SECTIONS.TITLE' | translate
+                    }}</h3>
+                <ul class="space-y-4">
+                    <li><a routerLink="/" class="text-gray-400 hover:text-white transition-colors">{{ 'NAV.HOME' |
+                            translate }}</a></li>
+                    <li><a routerLink="/about" class="text-gray-400 hover:text-white transition-colors">{{ 'NAV.ABOUT' |
+                            translate }}</a></li>
+                    <li><a routerLink="/interviews" class="text-gray-400 hover:text-white transition-colors">{{
+                            'NAV.INTERVIEWS' | translate }}</a></li>
+                    <li><a routerLink="/contact" class="text-gray-400 hover:text-white transition-colors">{{
+                            'NAV.CONTACT' | translate }}</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm uppercase tracking-widest mb-6 text-gray-400">{{ 'FOOTER.CONNECT.TITLE' | translate
+                    }}</h3>
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#" class="flex items-center hover:text-gray-400 transition-colors group">
+                            <lucide-icon [img]="Twitter"
+                                class="w-4 h-4 mr-3 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                            {{ 'FOOTER.CONNECT.TWITTER' | translate }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center hover:text-gray-400 transition-colors group">
+                            <lucide-icon [img]="Instagram"
+                                class="w-4 h-4 mr-3 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                            {{ 'FOOTER.CONNECT.INSTAGRAM' | translate }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center hover:text-gray-400 transition-colors group">
+                            <lucide-icon [img]="Facebook"
+                                class="w-4 h-4 mr-3 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                            {{ 'FOOTER.CONNECT.FACEBOOK' | translate }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm uppercase tracking-widest mb-6 text-gray-400">{{ 'FOOTER.CONTACT.TITLE' | translate
+                    }}</h3>
+                <ul class="space-y-4">
+                    <li>
+                        <a routerLink="/contact" class="flex items-center hover:text-gray-400 transition-colors group">
+                            <lucide-icon [img]="MessageSquare"
+                                class="w-4 h-4 mr-3 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                            {{ 'FOOTER.CONTACT.SEND_MESSAGE' | translate }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@literaryreview.com"
+                            class="flex items-center hover:text-gray-400 transition-colors group">
+                            <lucide-icon [img]="Mail"
+                                class="w-4 h-4 mr-3 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                            contact&#64;literaryreview.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+237657263559"
+                            class="flex items-center hover:text-gray-400 transition-colors group">
+                            <lucide-icon [img]="Phone"
+                                class="w-4 h-4 mr-3 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                            +237 657 263 559
+                        </a>
+                    </li>
+                    <li class="flex items-start group">
+                        <lucide-icon [img]="MapPin"
+                            class="w-4 h-4 mr-3 mt-1 text-gray-600 group-hover:text-white transition-colors"></lucide-icon>
+                        <span class="text-gray-400 group-hover:text-gray-300 transition-colors">
+                            123 Literary Ave,<br>New York, NY 10011
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>{{ 'FOOTER.COPYRIGHT' | translate }}</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a routerLink="/privacy" class="hover:text-gray-400 transition-colors">{{ 'FOOTER.PRIVACY_POLICY' |
+                    translate }}</a>
+                <a routerLink="/terms" class="hover:text-gray-400 transition-colors">{{ 'FOOTER.TERMS_OF_SERVICE' |
+                    translate }}</a>
+            </div>
+        </div>
+    </div>
+</footer>

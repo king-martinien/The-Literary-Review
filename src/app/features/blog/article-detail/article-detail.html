@@ -1,0 +1,40 @@
+<div class="pt-32 pb-20 min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    @if (article(); as article) {
+    <article class="container mx-auto px-6 max-w-4xl">
+        <a routerLink="/"
+            class="inline-flex items-center text-sm uppercase tracking-widest mb-8 hover:text-gray-600 dark:text-gray-300 dark:hover:text-white transition-colors">
+            <lucide-icon [img]="ArrowLeft" class="w-4 h-4 mr-2"></lucide-icon>
+            {{ 'ARTICLE_DETAIL.BACK_TO_HOME' | translate }}
+        </a>
+
+        <header class="mb-12 text-center">
+            <span class="block text-sm uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400 mb-4">{{
+                article.category }}</span>
+            <h1 class="font-serif text-4xl md:text-6xl mb-8 leading-tight dark:text-white">{{ article.title }}</h1>
+            <div class="relative h-[400px] md:h-[500px] w-full overflow-hidden rounded-sm">
+                <img [ngSrc]="article.image" [alt]="article.title" fill class="object-cover" priority>
+            </div>
+        </header>
+
+        <div class="prose prose-lg mx-auto font-serif dark:prose-invert">
+            <p class="text-xl leading-relaxed text-gray-800 dark:text-gray-200">{{ article.excerpt }}</p>
+            <hr class="my-8 border-gray-200 dark:border-gray-700 w-24 mx-auto">
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">{{ article.content }}</p>
+            <!-- Placeholder for more content -->
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+        </div>
+    </article>
+    } @else {
+    <div class="container mx-auto px-6 text-center pt-20">
+        <h2 class="font-serif text-3xl mb-4 dark:text-white">{{ 'ARTICLE_DETAIL.NOT_FOUND' | translate }}</h2>
+        <a routerLink="/"
+            class="text-sm uppercase tracking-widest border-b border-black dark:border-white pb-1 dark:text-white">{{
+            'ARTICLE_DETAIL.RETURN_HOME' | translate }}</a>
+    </div>
+    }
+</div>

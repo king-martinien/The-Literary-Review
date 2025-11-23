@@ -1,0 +1,140 @@
+<section
+    class="pt-40 pb-24 bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center transition-colors duration-300">
+    <div class="container mx-auto px-4 md:px-6">
+
+        <!-- Header -->
+        <div #headerSection class="text-center mb-20 opacity-0 translate-y-8">
+            <span
+                class="inline-block py-1 px-3 border border-black dark:border-white text-xs uppercase tracking-widest mb-6 dark:text-white">{{
+                'CONTACT.HERO.BADGE' | translate }}</span>
+            <h1 class="font-serif text-5xl md:text-6xl mb-6 dark:text-white">{{ 'CONTACT.HERO.TITLE' | translate }}</h1>
+            <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                {{ 'CONTACT.HERO.DESCRIPTION' | translate }}
+            </p>
+        </div>
+
+        <!-- Contact Card -->
+        <div #contactCard
+            class="max-w-7xl p-5 mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden flex flex-col lg:flex-row min-h-[600px] opacity-0 scale-95 transition-colors duration-300">
+
+            <!-- Left Side (Image & Info) -->
+            <div
+                class="lg:w-5/12 relative bg-gray-900 rounded-md overflow-hidden text-white px-7 py-10 flex flex-col justify-between">
+                <!-- Background Image -->
+                <div class="absolute inset-0 z-0">
+                    <img ngSrc="/images/contact-bg.png" alt="Contact Background" fill priority
+                        class="object-cover opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="relative z-10">
+                    <h2 class="font-serif text-3xl mb-4">{{ 'CONTACT.INFO.TITLE' | translate }}</h2>
+                    <p class="text-gray-200 leading-relaxed mb-12">
+                        {{ 'CONTACT.INFO.DESCRIPTION' | translate }}
+                    </p>
+                </div>
+
+                <div class="relative z-10 space-y-6">
+                    <a href="tel:+237657263559"
+                        class="flex items-center group hover:text-emerald-400 transition-colors">
+                        <lucide-icon [img]="Phone" class="w-5 h-5 mr-4"></lucide-icon>
+                        <span class="font-medium">+237 657 263 559</span>
+                    </a>
+
+                    <a href="mailto:contact@literaryreview.com"
+                        class="flex items-center group hover:text-emerald-400 transition-colors">
+                        <lucide-icon [img]="Mail" class="w-5 h-5 mr-4"></lucide-icon>
+                        <span class="font-medium">contact&#64;literaryreview.com</span>
+                    </a>
+
+                    <div class="flex items-center">
+                        <lucide-icon [img]="MapPin" class="w-5 h-5 mr-4"></lucide-icon>
+                        <span class="font-medium">123 Literary Ave, New York, NY</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side (Form) -->
+            <div class="lg:w-7/12 py-10 md:px-10 lg:p-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-2 form-field opacity-0 translate-x-4">
+                            <label for="name" class="text-sm font-medium text-gray-700 dark:text-gray-300">{{
+                                'CONTACT.FORM.NAME_LABEL' | translate }}</label>
+                            <input type="text" id="name" formControlName="name" autocomplete="name"
+                                class="w-full border border-gray-200 dark:border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-all bg-gray-50/50 dark:bg-gray-700/50 placeholder:text-gray-400 dark:text-white"
+                                [placeholder]="'CONTACT.FORM.NAME_PLACEHOLDER' | translate">
+                            @if (f.name.touched && f.name.invalid) {
+                            <div class="text-red-500 text-sm">
+                                @if (f.name.hasError('required')) { {{ 'CONTACT.FORM.VALIDATION.NAME_REQUIRED' |
+                                translate }} }
+                                @if (f.name.hasError('minlength')) { {{ 'CONTACT.FORM.VALIDATION.NAME_MIN_LENGTH' |
+                                translate }} }
+                                @if (f.name.hasError('maxlength')) { {{ 'CONTACT.FORM.VALIDATION.NAME_MAX_LENGTH' |
+                                translate }} }
+                            </div>
+                            }
+                        </div>
+                        <div class="space-y-2 form-field opacity-0 translate-x-4">
+                            <label for="phone" class="text-sm font-medium text-gray-700 dark:text-gray-300">{{
+                                'CONTACT.FORM.PHONE_LABEL' | translate }}</label>
+                            <input type="tel" id="phone" formControlName="phone" autocomplete="tel"
+                                class="w-full border border-gray-200 dark:border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-all bg-gray-50/50 dark:bg-gray-700/50 placeholder:text-gray-400 dark:text-white"
+                                [placeholder]="'CONTACT.FORM.PHONE_PLACEHOLDER' | translate">
+                            @if (f.phone.touched && f.phone.invalid) {
+                            <div class="text-red-500 text-sm">
+                                @if (f.phone.hasError('required')) { {{ 'CONTACT.FORM.VALIDATION.PHONE_REQUIRED' |
+                                translate }} }
+                                @if (f.phone.hasError('minlength')) { {{ 'CONTACT.FORM.VALIDATION.PHONE_MIN_LENGTH' |
+                                translate }} }
+                                @if (f.phone.hasError('maxlength')) { {{ 'CONTACT.FORM.VALIDATION.PHONE_MAX_LENGTH' |
+                                translate }} }
+                            </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 form-field opacity-0 translate-x-4">
+                        <label for="email" class="text-sm font-medium text-gray-700 dark:text-gray-300">{{
+                            'CONTACT.FORM.EMAIL_LABEL' | translate }}</label>
+                        <input type="email" id="email" formControlName="email" autocomplete="email"
+                            class="w-full border border-gray-200 dark:border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-all bg-gray-50/50 dark:bg-gray-700/50 placeholder:text-gray-400 dark:text-white"
+                            [placeholder]="'CONTACT.FORM.EMAIL_PLACEHOLDER' | translate">
+                        @if (f.email.touched && f.email.invalid) {
+                        <div class="text-red-500 text-sm mt-1">
+                            @if (f.email.hasError('required')) { {{ 'CONTACT.FORM.VALIDATION.EMAIL_REQUIRED' | translate
+                            }} }
+                            @if (f.email.hasError('email')) { {{ 'CONTACT.FORM.VALIDATION.EMAIL_INVALID' | translate }}
+                            }
+                        </div>
+                        }
+                    </div>
+
+                    <div class="space-y-2 form-field opacity-0 translate-x-4">
+                        <label for="message" class="text-sm font-medium text-gray-700 dark:text-gray-300">{{
+                            'CONTACT.FORM.MESSAGE_LABEL' | translate }}</label>
+                        <textarea id="message" formControlName="message" rows="6"
+                            class="w-full border border-gray-200 dark:border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-all bg-gray-50/50 dark:bg-gray-700/50 resize-none placeholder:text-gray-400 dark:text-white"
+                            [placeholder]="'CONTACT.FORM.MESSAGE_PLACEHOLDER' | translate"></textarea>
+                        @if (f.message.touched && f.message.invalid) {
+                        <div class="text-red-500 text-sm mt-1">
+                            @if (f.message.hasError('required')) { {{ 'CONTACT.FORM.VALIDATION.MESSAGE_REQUIRED' |
+                            translate }} }
+                            @if (f.message.hasError('minlength')) { {{ 'CONTACT.FORM.VALIDATION.MESSAGE_MIN_LENGTH' |
+                            translate }} }
+                            @if (f.message.hasError('maxlength')) { {{ 'CONTACT.FORM.VALIDATION.MESSAGE_MAX_LENGTH' |
+                            translate }} }
+                        </div>
+                        }
+                    </div>
+
+                    <button type="submit" [disabled]="contactForm.invalid"
+                        class="form-field opacity-0 translate-x-4 w-full md:w-auto bg-emerald-700 text-white px-8 py-3.5 rounded font-medium hover:bg-emerald-800 disabled:bg-emerald-700/50 disabled:hover:bg-emerald-700/50 transition-colors shadow-lg shadow-emerald-700/20 disabled:shadow-emerald-700/10 flex items-center justify-center disabled:cursor-not-allowed">
+                        {{ 'CONTACT.FORM.SUBMIT_BUTTON' | translate }}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

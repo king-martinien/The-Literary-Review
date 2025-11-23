@@ -1,0 +1,149 @@
+<header class="fixed w-full top-0 z-50 backdrop-blur-sm transition-colors duration-300 dark:bg-gray-900/90"
+    [class.bg-black]="isMenuOpen()" [class.text-white]="isMenuOpen()" [class.bg-white/90]="!isMenuOpen()"
+    [class.border-b]="!isMenuOpen()" [class.border-gray-100]="!isMenuOpen()"
+    [class.dark:border-gray-700]="!isMenuOpen()" [class.dark:text-white]="!isMenuOpen()">
+    <div class="container mx-auto px-6 h-20 flex items-center justify-between relative z-50">
+        <a routerLink="/"
+            class="text-2xl font-serif tracking-tight hover:opacity-70 transition-opacity dark:text-white">
+            The Literary Review
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <a routerLink="/" routerLinkActive="!text-black dark:!text-white"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+                {{ 'NAV.HOME' | translate }}
+            </a>
+            <a routerLink="/about" routerLinkActive="!text-black dark:!text-white"
+                class="text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+                {{ 'NAV.ABOUT' | translate }}
+            </a>
+            <a routerLink="/interviews" routerLinkActive="!text-black dark:!text-white"
+                class="text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+                {{ 'NAV.INTERVIEWS' | translate }}
+            </a>
+            <a routerLink="/contact" routerLinkActive="!text-black dark:!text-white"
+                class="text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+                {{ 'NAV.CONTACT' | translate }}
+            </a>
+
+            <div class="flex items-center space-x-4 ml-4 pl-4 border-l border-gray-200 dark:border-gray-800">
+                <!-- Language Dropdown -->
+                <div class="relative">
+                    <button (click)="toggleLangMenu()"
+                        class="flex items-center gap-1 px-3 py-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium text-gray-600 dark:text-gray-400"
+                        aria-label="Select language">
+                        @if (currentLang() === 'en') {
+                        <img src="/svg/flag-gb.svg" alt="UK flag" class="w-5 h-3.5 object-cover shadow-sm">
+                        <span>EN</span>
+                        } @else {
+                        <img src="/svg/flag-fr.svg" alt="French flag" class="w-5 h-3.5 object-cover shadow-sm">
+                        <span>FR</span>
+                        }
+                        <lucide-icon [img]="ChevronDown" class="w-4 h-4 transition-transform duration-200"
+                            [class.rotate-180]="isLangMenuOpen()"></lucide-icon>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    @if (isLangMenuOpen()) {
+                    <div
+                        class="absolute top-full right-0 mt-2 w-32 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 py-1 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                        <button (click)="changeLanguage('en')"
+                            class="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-2 transition-colors"
+                            [class.text-blue-600]="currentLang() === 'en'"
+                            [class.dark:text-blue-400]="currentLang() === 'en'"
+                            [class.text-gray-700]="currentLang() !== 'en'"
+                            [class.dark:text-gray-300]="currentLang() !== 'en'">
+                            <img src="/svg/flag-gb.svg" alt="UK flag" class="w-4 h-3 object-cover">
+                            English
+                        </button>
+                        <button (click)="changeLanguage('fr')"
+                            class="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-2 transition-colors"
+                            [class.text-blue-600]="currentLang() === 'fr'"
+                            [class.dark:text-blue-400]="currentLang() === 'fr'"
+                            [class.text-gray-700]="currentLang() !== 'fr'"
+                            [class.dark:text-gray-300]="currentLang() !== 'fr'">
+                            <img src="/svg/flag-fr.svg" alt="French flag" class="w-4 h-3 object-cover">
+                            Français
+                        </button>
+                    </div>
+
+                    <!-- Backdrop to close menu -->
+                    <div class="fixed inset-0 z-[-1]" (click)="toggleLangMenu()"></div>
+                    }
+                </div>
+
+                <button (click)="toggleTheme()"
+                    class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-gray-600 dark:text-gray-400"
+                    aria-label="Toggle theme">
+                    @if (themeService.isDarkMode()) {
+                    <lucide-icon [img]="Sun" class="w-5 h-5"></lucide-icon>
+                    } @else {
+                    <lucide-icon [img]="Moon" class="w-5 h-5"></lucide-icon>
+                    }
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+            class="md:hidden p-2 -mr-2 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors z-50 relative"
+            (click)="toggleMenu()" aria-label="Toggle mobile menu">
+            @if (isMenuOpen()) {
+            <lucide-icon [img]="X" class="w-6 h-6 text-white"></lucide-icon>
+            } @else {
+            <lucide-icon [img]="Menu" class="w-6 h-6"></lucide-icon>
+            }
+        </button>
+    </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div #menuOverlay class="fixed inset-0 bg-black z-40 flex items-center justify-center"
+    [class.pointer-events-none]="!isMenuOpen()" style="clip-path: circle(0% at 100% 0%)">
+    <nav #menuLinks class="flex flex-col items-center space-y-8">
+        <a routerLink="/" (click)="toggleMenu()"
+            class="text-3xl font-serif text-white hover:text-gray-300 transition-colors">
+            {{ 'NAV.HOME' | translate }}
+        </a>
+        <a routerLink="/about" (click)="toggleMenu()"
+            class="text-3xl font-serif text-white hover:text-gray-300 transition-colors">
+            {{ 'NAV.ABOUT' | translate }}
+        </a>
+        <a routerLink="/interviews" (click)="toggleMenu()"
+            class="text-3xl font-serif text-white hover:text-gray-300 transition-colors">
+            {{ 'NAV.INTERVIEWS' | translate }}
+        </a>
+        <a routerLink="/contact" (click)="toggleMenu()"
+            class="text-3xl font-serif text-white hover:text-gray-300 transition-colors">
+            {{ 'NAV.CONTACT' | translate }}
+        </a>
+
+        <!-- Mobile Toggles -->
+        <div class="flex items-center space-x-6 mt-8 pt-8 border-t border-white/10 w-full justify-center">
+            <button (click)="changeLanguage(currentLang() === 'en' ? 'fr' : 'en')"
+                class="flex items-center space-x-2 px-4 py-2 rounded-full text-white hover:bg-white/10 transition-colors text-lg font-medium"
+                aria-label="Toggle language">
+                @if (currentLang() === 'en') {
+                <img src="/svg/flag-fr.svg" alt="French flag" class="w-6 h-4 object-cover">
+                } @else {
+                <img src="/svg/flag-gb.svg" alt="UK flag" class="w-6 h-4 object-cover">
+                }
+                <span>{{ currentLang() === 'en' ? 'FR' : 'EN' }}</span>
+            </button>
+
+            <button (click)="toggleTheme()"
+                class="flex items-center space-x-2 px-4 py-2 rounded-full text-white hover:bg-white/10 transition-colors"
+                aria-label="Toggle theme">
+                @if (themeService.isDarkMode()) {
+                <lucide-icon [img]="Sun" class="w-6 h-6"></lucide-icon>
+                <span class="text-lg font-medium">Light</span>
+                } @else {
+                <lucide-icon [img]="Moon" class="w-6 h-6"></lucide-icon>
+                <span class="text-lg font-medium">Dark</span>
+                }
+            </button>
+        </div>
+    </nav>
+</div>
