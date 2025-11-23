@@ -2,8 +2,6 @@
 
 A modern, elegant web application dedicated to literary content, featuring in-depth interviews, articles, and a curated reading experience. Built with Angular and Tailwind CSS.
 
-![The Literary Review Preview](/src/assets/preview.png)
-
 ## Features
 
 - **Modern & Responsive Design**: A fully responsive layout that works seamlessly on desktop, tablet, and mobile devices.
@@ -110,7 +108,7 @@ src/
 │   ├── features/       # Feature modules (Home, About, Interviews, etc.)
 │   ├── layout/         # Main layout components (Header, Footer)
 │   └── shared/         # Shared components, pipes, directives
-├── assets/             # Static assets (images, fonts, icons)
+├── public/             # Static assets (images, fonts, icons)
 └── styles.css          # Global styles and Tailwind configuration
 ```
 
