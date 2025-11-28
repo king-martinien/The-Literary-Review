@@ -35,10 +35,10 @@
                         class="flex items-center gap-1 px-3 py-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium text-gray-600 dark:text-gray-400"
                         aria-label="Select language">
                         @if (currentLang() === 'en') {
-                        <img src="/svg/flag-gb.svg" alt="UK flag" class="w-5 h-3.5 object-cover shadow-sm">
+                        <img src="/svgs/flag-gb.svg" alt="UK flag" class="w-5 h-3.5 object-cover shadow-sm">
                         <span>EN</span>
                         } @else {
-                        <img src="/svg/flag-fr.svg" alt="French flag" class="w-5 h-3.5 object-cover shadow-sm">
+                        <img src="/svgs/flag-fr.svg" alt="French flag" class="w-5 h-3.5 object-cover shadow-sm">
                         <span>FR</span>
                         }
                         <lucide-icon [img]="ChevronDown" class="w-4 h-4 transition-transform duration-200"
@@ -55,7 +55,7 @@
                             [class.dark:text-blue-400]="currentLang() === 'en'"
                             [class.text-gray-700]="currentLang() !== 'en'"
                             [class.dark:text-gray-300]="currentLang() !== 'en'">
-                            <img src="/svg/flag-gb.svg" alt="UK flag" class="w-4 h-3 object-cover">
+                            <img src="/svgs/flag-gb.svg" alt="UK flag" class="w-4 h-3 object-cover">
                             English
                         </button>
                         <button (click)="changeLanguage('fr')"
@@ -64,7 +64,7 @@
                             [class.dark:text-blue-400]="currentLang() === 'fr'"
                             [class.text-gray-700]="currentLang() !== 'fr'"
                             [class.dark:text-gray-300]="currentLang() !== 'fr'">
-                            <img src="/svg/flag-fr.svg" alt="French flag" class="w-4 h-3 object-cover">
+                            <img src="/svgs/flag-fr.svg" alt="French flag" class="w-4 h-3 object-cover">
                             Français
                         </button>
                     </div>
@@ -126,9 +126,9 @@
                 class="flex items-center space-x-2 px-4 py-2 rounded-full text-white hover:bg-white/10 transition-colors text-lg font-medium"
                 aria-label="Toggle language">
                 @if (currentLang() === 'en') {
-                <img src="/svg/flag-fr.svg" alt="French flag" class="w-6 h-4 object-cover">
+                <img src="/svgs/flag-fr.svg" alt="French flag" class="w-6 h-4 object-cover">
                 } @else {
-                <img src="/svg/flag-gb.svg" alt="UK flag" class="w-6 h-4 object-cover">
+                <img src="/svgs/flag-gb.svg" alt="UK flag" class="w-6 h-4 object-cover">
                 }
                 <span>{{ currentLang() === 'en' ? 'FR' : 'EN' }}</span>
             </button>

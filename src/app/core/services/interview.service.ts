@@ -24,7 +24,7 @@ export class InterviewService {
             interviewee: "Elena Ferrante",
             role: "Novelist",
             date: "2024-10-15",
-            image: "/images/founder.png",
+            image: "/images/founder.webp",
             excerpt: "In a rare conversation, the elusive author discusses the spaces we inhabit, both in reality and in fiction, and how they shape our identities.",
             tags: ["Fiction", "Identity"],
             featured: true,
@@ -49,7 +49,7 @@ export class InterviewService {
             interviewee: "Sarah Jones",
             role: "Poet",
             date: "2024-11-02",
-            image: "/images/cta-bg-v2.png",
+            image: "/images/cta-bg.webp",
             excerpt: "Exploring the intersection of technology and human emotion, and why verse matters more than ever.",
             tags: ["Poetry", "Technology"],
             content: [
@@ -69,7 +69,7 @@ export class InterviewService {
             interviewee: "Marcus Thorne",
             role: "Historian",
             date: "2024-10-28",
-            image: "/images/founder.png",
+            image: "/images/founder.webp",
             excerpt: "Why looking back is the only way to move forward, and the responsibility of the storyteller.",
             tags: ["History", "Non-fiction"],
             content: [
@@ -85,7 +85,7 @@ export class InterviewService {
             interviewee: "Yuki Tanaka",
             role: "Translator",
             date: "2024-10-10",
-            image: "/images/founder.png",
+            image: "/images/founder.webp",
             excerpt: "Bridging cultures and languages, one sentence at a time.",
             tags: ["Translation", "Language"],
             content: [
@@ -101,7 +101,7 @@ export class InterviewService {
             interviewee: "Alex Chen",
             role: "Futurist",
             date: "2024-09-28",
-            image: "/images/cta-bg-v2.png",
+            image: "/images/cta-bg.webp",
             excerpt: "How immersive technologies are reshaping the way we consume and create narratives in the 21st century.",
             tags: ["Technology", "Future"],
             content: [
@@ -117,7 +117,7 @@ export class InterviewService {
             interviewee: "Amara Okafor",
             role: "Sociologist",
             date: "2024-09-15",
-            image: "/images/founder.png",
+            image: "/images/founder.webp",
             excerpt: "Shining a light on underrepresented communities and the power of oral histories.",
             tags: ["Sociology", "Culture"],
             content: [
@@ -133,7 +133,7 @@ export class InterviewService {
             interviewee: "David Miller",
             role: "Screenwriter",
             date: "2024-09-01",
-            image: "/images/cta-bg-v2.png",
+            image: "/images/cta-bg.webp",
             excerpt: "From script to screen: understanding the mechanics of visual storytelling and dialogue.",
             tags: ["Film", "Writing"],
             content: [

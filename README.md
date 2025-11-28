@@ -13,6 +13,8 @@ A modern, elegant web application dedicated to literary content, featuring in-de
   - **About**: The story and mission behind the publication.
   - **Contact**: Easy way to get in touch.
 - **Performance**: Optimized for speed with lazy loading and modern Angular best practices.
+- **SEO Optimized**: Open Graph and Twitter Card tags for rich social media previews.
+- **PWA Ready**: Includes a site manifest and optimized icons for a native app-like experience.
 
 ## Tech Stack
 
@@ -108,7 +110,11 @@ src/
 │   ├── features/       # Feature modules (Home, About, Interviews, etc.)
 │   ├── layout/         # Main layout components (Header, Footer)
 │   └── shared/         # Shared components, pipes, directives
-├── public/             # Static assets (images, fonts, icons)
+├── public/             # Static assets
+│   ├── images/         # Content images (articles, interviews)
+│   ├── icons/          # App icons and favicons
+│   ├── svgs/           # SVG assets (flags, etc.)
+│   └── site.webmanifest # Web App Manifest
 └── styles.css          # Global styles and Tailwind configuration
 ```
 
